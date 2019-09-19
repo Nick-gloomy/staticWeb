@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计时程序</title>
+</head>
+<body>
+   <p id = newtime ></p>
+   <button id = but  onclick="closs()">停止时间</button>
+   <button id = but2  onclick="wi()">自己弹自己</button>
+    <script>
+
+        function time() {
+
+            var ti = new Date();
+            var t  = ti.toLocaleTimeString();
+            document.getElementById("newtime").innerHTML=t ;
+
+        }
+
+        var newtime = setInterval( function () {    //setInterval 间隔指定时间一直循环执行
+
+            time();
+
+        } ,1000);
+
+
+        function closs () {
+            clearInterval( newtime );
+        }
+
+
+        var win;
+        function wi() {
+
+            alert("123")
+            win = setTimeout(function () {   //setTimeout 本是延时执行
+               wi();
+            } ,3000);
+        }
+
+
+
+    </script>
+
+</body>
+</html>

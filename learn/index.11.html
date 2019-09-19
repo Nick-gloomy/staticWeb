@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sessionStronge</title>
+</head>
+<body>
+<textarea id="te" style="width: 200px ;height: 200px"></textarea>
+<button id="btn">save</button>
+
+<script>
+var te;
+var btn;
+
+window.onload = function () {
+    te = document.getElementById("te");
+    if (localStorage.text) {
+        te.value = sessionStorage.text;
+    }
+    btn = document.getElementById("btn");
+    btn.onclick = function () {
+       sessionStorage.text = te.value;
+    }
+}
+
+// sessionStorage 储存会在关闭浏览器时清除
+</script>
+
+</body>
+</html>

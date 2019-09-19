@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>locaStroage</title>
+</head>
+<body>
+     <textarea id="te" style="width: 200px ;height: 200px"></textarea>
+    <button id="btn">save</button>
+
+<script>
+    var te;
+    var btn;
+
+    window.onload=function () {
+        te = document.getElementById("te");
+        if (localStorage.text){
+            te.value=localStorage.text;
+        }
+        btn = document.getElementById("btn");
+        btn.onclick=function () {
+            localStorage.text = te.value;
+        }
+    }
+// localStorage存储的数据永久保存
+</script>
+</body>
+</html>

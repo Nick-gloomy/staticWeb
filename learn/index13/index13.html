@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script  src="jquery-3.1.1.min.js"></script>
+
+    <script src="index13.js"></script>
+    <style>
+          div{
+              width: 50px;
+              height: 50px;
+              background: #123134;
+              margin: 2px;
+              float: left;
+          }
+
+        header{
+            margin: 20px;
+        }
+        .concent,.SL{
+            width: 500px;
+            height: 100px;
+            text-align: center;
+            background: #20c997;
+            color: white;
+            border: #34ce57;
+            border: 1px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <p class="text">One Two There</p>
+<button class="HIDE">隐藏</button>
+<button class="SHOW">显示</button>
+<button class="CHANGE">隐藏/显示</button>
+</header>
+
+
+
+
+
+<nav>
+    <button class="Out">out</button>
+    <button class="In">in</button>
+    <button class="Toggle">toggle</button>
+    <button class="To">to</button>
+
+
+         <nav class="P1" style="width: 100px ; height: 100px ; background: #2a9954;"></nav>
+         <nav class="P2" style="width: 100px ; height: 100px ; background: #0f6674;" ></nav>
+         <nav class="P3" style="width: 100px ; height: 100px ; background: #3a88de;"></nav>
+         <img src="../New01/back-view-backlit-calm-waters-590141.jpg"  width="500px"/>
+</nav>
+
+<nav>
+    <p class="SL">出现|隐藏</p>
+    <p class="concent" style="display: none">!哒哒!</p>
+</nav>
+
+
+
+
+<script>
+    for(var i=0 ; i<5 ;i++ ){
+        $("<div>").appendTo(document.body);
+
+    }
+
+    $("div").mouseenter(function () {
+        $(this).hide(2000 , function () {
+            $(this).remove();
+        });
+    })
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>漫画涂鸦</title>
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-reboot.min.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-light bg-dark navbar-fixed-top shadow-lg">
+    <div>
+        <h1 class="text-light"><i class="fa fa-superpowers fa-lg"></i>火影</h1>
+    </div>
+</nav>
+
+<div class="container-fluid bg-secondary ">
+
+    <div class="jumbotron bg-secondary shadow-lg">
+        <h1 class="display-3">漫画涂鸦</h1>
+        <hr class="my-4 bg-light">
+        <p class="lead">对火影忍者热爱的你，测试一下是否有做漫画师的潜力</p>
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-1 ">
+            <div class="bg-secondary pl-md-1 shadow-lg rounded text-light position-fixed text-center">
+                <div>
+                    <a class="btn bg-secondary mt-md-3 my-md-1 text-light" style="background:rgba(26,97,244,0.87) "
+                       href="#div01"  id="b-1">图片选择</a>
+                </div>
+                <div>
+                    <a class="btn bg-secondary my-md-1 text-light" href="#div02"
+                       style="background:rgba(26,97,244,0.87) "
+                        id="b-2">绘画画板</a>
+                </div>
+                <div>
+                    <a class="btn bg-secondary mb-md-3 my-md-1 text-light" href="主页副本.html"
+                       style="background: rgba(26,97,244,0.87)"  id="b-5">返回主页</a>
+                </div>
+            </div>
+        </div>
+        <div class="container bg-secondary shadow-lg col-md-10">
+            <div class="mt-md-3 ml-md-1">
+                <label class="" id="div01"
+                       style="font-size: 3em ;font-weight: lighter;font-family: 幼圆; ">请选择要试画的图：</label>
+            </div>
+            <hr class="display-4 bg-light">
+            <br>
+            <div class="row text-center">
+                <a class="col-md-3 " id="div4-1" href="#div02" onclick="changel(41)">
+                    <div class="position-absolute  ml-md-5 mt-md-5">
+                        <p class="  px-md-5 py-md-3  text-light  rounded " id="p4-1"
+                           style=" background:rgba(0,0,0,0.56);display: none">尝试这张图</p>
+                    </div>
+                    <img src="img_01/41.jpg" width="200" height="200" class="rounded" >
+
+                </a>
+                <a class="col-md-3 " id="div4-2"href="#div02" onclick="changen(42)">
+                    <div class="position-absolute  ml-md-5 mt-md-5">
+                        <p class="  px-md-5 py-md-3  text-light  rounded " id="p4-2"
+                           style=" background:rgba(0,0,0,0.56);display: none">尝试这张图</p>
+                    </div>
+                    <img src="img_01/42.jpeg" width="200" height="200" class="rounded">
+                </a>
+                <a class="col-md-3 " id="div4-3"href="#div02"onclick="changel(43)">
+                    <div class="position-absolute  ml-md-5 mt-md-5">
+                        <p class="  px-md-5 py-md-3  text-light  rounded " id="p4-3"
+                           style=" background:rgba(0,0,0,0.56);display: none">尝试这张图</p>
+                    </div>
+                    <img src="img_01/43.jpg" width="200" height="200" class="rounded">
+                </a>
+                <a class="col-md-3 " id="div4-4"href="#div02"onclick="changel(44)">
+                    <div class="position-absolute  ml-md-5 mt-md-5">
+                        <p class="  px-md-5 py-md-3  text-light  rounded " id="p4-4"
+                           style=" background:rgba(0,0,0,0.56);display: none">尝试这张图</p>
+                    </div>
+                    <img src="img_01/44.jpg" width="200" height="200" class="rounded">
+                </a>
+            </div>
+            <br>
+            <br>
+
+            <div class="row text-center">
+                <a class="col-md-3 " id="div4-5"href="#div02"onclick="changel(45)">
+                    <div class="position-absolute  ml-md-5 mt-md-5">
+                        <p class="  px-md-5 py-md-3  text-light  rounded " id="p4-5"
+                           style=" background:rgba(0,0,0,0.56);display: none">尝试这张图</p>
+                    </div>
+                    <img src="img_01/45.jpg" width="200" height="200" class="rounded">
+                </a>
+                <a class="col-md-3 " id="div4-6"href="#div02"onclick="changen(46)">
+                    <div class="position-absolute  ml-md-5 mt-md-5">
+                        <p class="  px-md-5 py-md-3  text-light  rounded " id="p4-6"
+                           style=" background:rgba(0,0,0,0.56);display: none">尝试这张图</p>
+                    </div>
+                    <img src="img_01/46.jpeg" width="200" height="200" class="rounded">
+                </a>
+                <a class="col-md-3 " id="div4-7"href="#div02"onclick="changel(47)">
+                    <div class="position-absolute  ml-md-5 mt-md-5">
+                        <p class="  px-md-5 py-md-3  text-light  rounded " id="p4-7"
+                           style=" background:rgba(0,0,0,0.56);display: none">尝试这张图</p>
+                    </div>
+                    <img src="img_01/47.jpg" width="200" height="200" class="rounded">
+                </a>
+                <a class="col-md-3 " id="div4-8"href="#div02"onclick="changel(48)">
+                    <div class="position-absolute  ml-md-5 mt-md-5">
+                        <p class="  px-md-5 py-md-3  text-light  rounded " id="p4-8"
+                           style=" background:rgba(0,0,0,0.56);display: none">尝试这张图</p>
+                    </div>
+                    <img src="img_01/48.jpg" width="200" height="200" class="rounded">
+                </a>
+            </div>
+
+            <br>
+            <br>
+        </div>
+
+
+
+
+    </div>
+    <br>
+    <br>
+    <div class="container bg-secondary rounded shadow-lg">
+        <br>
+        <div id="div02">
+            <label  style="font-size: 3em ;font-weight: lighter;font-family: 幼圆; ">绘画画板：</label>
+        </div>
+        <hr class="display-4 bg-light">
+        <br>
+        <div class="row">
+            <div class="col-md-12 mx-md-2 rounded shadow-sm text-center">
+                <div class="position-absolute" style="margin-left:50px;" >
+                    <canvas class="rounded" style="background:rgba(118,140,164,0.62);" id="Cancans"></canvas>
+                </div>
+                <img style="border: 0px"  width="500" height="500" id="bg_img" >
+                <div class="row my-md-2">
+
+                    <div class="col-12 text-center">
+                        <button class="btn-dark btn mx-md-2" onclick="clearb() ">切换背板</button>
+                        <button class="btn btn-dark mx-md-2" onclick="clearl()">涂鸦重置</button>
+                        <button class="btn btn-dark mx-md-2" onclick="clearout()">导出涂鸦</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+
+    </div>
+    <br>
+    <br>
+
+
+</div>
+
+
+<div class="container-fluid bg-secondary ">
+
+</div>
+
+
+<div class="container-fluid bg-dark py-md-3 ">
+    <div class="blockquote text-center  text-light">
+        <p class="lead">陈钰林 丨 向蔚然 丨 李朗 丨 曾铭阳</p>
+        <footer class="blockquote-footer">16级计科2班</footer>
+    </div>
+</div>
+
+<script>
+    (function () {
+        var canvas =document.getElementById("Cancans");
+        var context=canvas.getContext("2d");
+        canvas.width = 1000;
+        canvas.height= 500;
+        /*context.fillStyle="rgba(250,255,251,0.17)";
+        context.fillRect(0,0,1000,500);*/
+
+
+        canvas.onmousedown=function (e){
+            var x =e.clientX - canvas.getBoundingClientRect().left;
+            var y = e.clientY - canvas.getBoundingClientRect().top;
+            context.beginPath();
+            context.moveTo(x,y);
+
+            canvas.onmousemove = function(event){
+                var x =event .clientX -
+                    canvas.getBoundingClientRect().left;
+                var y = event.clientY -
+                    canvas.getBoundingClientRect().top;
+                context.lineTo(x,y);
+                context.stroke();
+            }
+            canvas.onmouseup = function(event){
+                canvas.onmousemove = null;
+            }
+        }
+    }());
+
+
+    function clearl(){
+        var canvas =document.getElementById("Cancans");
+        var context=canvas.getContext("2d");
+        context.clearRect(0,0,1000,500);
+
+    }
+     var i = 1;
+    function clearb(){
+      if ( i%2 === 1 ) {
+          $("#Cancans").css("background", "white");
+      }else {
+          $("#Cancans").css("background", "rgba(118,140,164,0.62)");
+      }
+      i++;
+      return i;
+    }
+
+    function clearout(){
+        var canvas =document.getElementById("Cancans");
+        window.location = canvas.toDataURL("image/png");
+
+
+    }
+
+
+
+
+
+    $(document).ready(function () {
+
+
+    });
+       function changel(val){
+           var a ="img_01/"+val+".jpg";
+
+
+                $("#bg_img").attr("src",a);
+    }
+    function changen(val){
+        var a ="img_01/"+val+".jpeg";
+
+
+        $("#bg_img").attr("src",a);
+    }
+
+
+
+    $("#b-1").on("click", function () {
+        $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top - 15 + "px"}, 300);
+        return false;
+    });
+
+
+    $("#b-2").on("click", function () {
+        $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top - 15 + "px"}, 300);
+        return false;
+    });
+
+
+
+
+    $("#div4-1").on("mouseenter", function () {
+        $("#p4-1").fadeIn(1000);
+    });
+
+    $("#div4-1").on("mouseleave", function () {
+        $("#p4-1").fadeOut(1000);
+    });
+    $("#div4-2").on("mouseenter", function () {
+        $("#p4-2").fadeIn(1000);
+    });
+
+    $("#div4-2").on("mouseleave", function () {
+        $("#p4-2").fadeOut(1000);
+    });
+    $("#div4-3").on("mouseenter", function () {
+        $("#p4-3").fadeIn(1000);
+    });
+
+    $("#div4-3").on("mouseleave", function () {
+        $("#p4-3").fadeOut(1000);
+    })
+
+    $("#div4-4").on("mouseenter", function () {
+        $("#p4-4").fadeIn(1000);
+    });
+
+    $("#div4-4").on("mouseleave", function () {
+        $("#p4-4").fadeOut(1000);
+    });
+
+    $("#div4-5").on("mouseenter", function () {
+        $("#p4-5").fadeIn(1000);
+    });
+
+    $("#div4-5").on("mouseleave", function () {
+        $("#p4-5").fadeOut(1000);
+    });
+
+    $("#div4-6").on("mouseenter", function () {
+        $("#p4-6").fadeIn(1000);
+    });
+
+    $("#div4-6").on("mouseleave", function () {
+        $("#p4-6").fadeOut(1000);
+    });
+    $("#div4-7").on("mouseenter", function () {
+        $("#p4-7").fadeIn(1000);
+    });
+
+    $("#div4-7").on("mouseleave", function () {
+        $("#p4-7").fadeOut(1000);
+    });
+    $("#div4-8").on("mouseenter", function () {
+        $("#p4-8").fadeIn(1000);
+    });
+
+    $("#div4-8").on("mouseleave", function () {
+        $("#p4-8").fadeOut(1000);
+    })
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+div{
+    width: 100px;
+    height: 100px;
+    background: #2a9954;
+    -moz-transition: /*width 2s ,height 2s*/ 2s,transform 2s;
+     /*transition: height 2s ,height 2s,transform 2s;*/
+    margin: 300px;
+    border: 200px ;
+    border: rgba(0, 255, 255, 0.45);
+
+
+}
+
+div:hover{
+    /*width: 200px;*/
+    /*height: 200px;*/
+    border-radius: 50px;
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg) ;
+
+}

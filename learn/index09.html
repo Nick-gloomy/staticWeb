@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <style>
+        #my-canvas00{
+       background-color: #2a9954;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+
+</head>
+<body>
+
+<canvas id="my-canvas00"  ></canvas>
+
+<script>
+
+    var canvas ; var context;
+
+    window.onload=function () {
+        myca ();
+        draw();
+
+    }
+    function myca (){
+        document.body.innerHTML="<canvas id=\'my-canvas01\' height=\'200px\' width=\'200px\'></canvas>"
+
+        canvas = document.getElementById("my-canvas01");
+        context = canvas.getContext("2d");
+
+    }
+
+    function draw() {
+        context.fillStyle="green";
+
+        context.fillRect(10,10,100,100);
+        context.rotate (30);
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>

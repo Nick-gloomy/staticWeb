@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Git02</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+
+    <style>
+
+    </style>
+    <script>
+        $(function(){
+            $("#at1").click(function () {
+                $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top-15 +"px"}, 300);
+                return false;
+            });
+        })
+        $(function(){
+            $("#at2").click(function () {
+                $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top-15 +"px"}, 300);
+                return false;
+            });
+        })
+        $(function(){
+            $("#at3").click(function () {
+                $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top-15 +"px"}, 300);
+                return false;
+            });
+        })
+
+    </script>
+</head>
+<body bgcolor="gray">
+
+<nav class="navbar navbar-light bg-dark navbar-fixed-top">
+    <div class=" col-md-5 fa-2x">
+        <i class="fa fa-firefox  text-light  "></i>
+        <a class="navbar-brand text-light">Two</a>
+    </div>
+    <form class="form-inline col-mr-3">
+
+        <button class="btn btn-outline-secondary btn-dark my-2 my-sm-0 mx-2" type="button">
+            <i class="fa fa-heart text-danger"></i>
+        </button>
+        <button class="btn btn-outline-secondary btn-dark my-2 my-sm-0 mx-2 text-light " type="button">
+            <i class="fa fa-chain "></i>
+            Fork
+        </button>
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle mx-2" href="#" role="button" id="dropdownMenuLink"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                Change View
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">One</a>
+                <a class="dropdown-item" href="#">Two</a>
+                <a class="dropdown-item" href="#">There</a>
+            </div>
+        </div>
+
+        <button class="btn btn-success my-2 my-sm-0 text-dark mx-2" type="button">Sign in</button>
+        <button class="btn   btn-secondary my-2 my-sm-2 text-light ml-2" type="button ">Sign 1n</button>
+    </form>
+</nav>
+<nav class="navbar navbar-fixed" style="background: rgba(113,25,144,0.92)">
+
+    <i class="fa fa-tags  text-light ml-md-5" alt="Worry"></i>
+    <div class="btn-group col-md-3  mt-md-1 mb-md-3 " role="group" aria-label="Basic example">
+        <button type="button" class="btn  btn-outline-light text-dark py-md-2 rounded-0 font-weight-bold border-0 btt">
+            <a href="#The-01" class="text-decoration-none text-dark " id="at1">ABOUT</a></button>
+        <button type="button" class="btn  btn-outline-light text-dark py-md-2 rounded-0 font-weight-bold border-0 btt">
+            <a href="#The-02" class="text-decoration-none text-dark " id="at2">PORTFOLIO</a></button>
+        <button type="button" class="btn  btn-outline-light text-dark py-md-2 rounded-0 font-weight-bold border-0 btt">
+            <a href="#The-03" class="text-decoration-none text-dark " id="at3">CONTACT</a></button>
+    </div>
+
+</nav>
+
+<div class="container ">
+
+   <div class="row bg-dark " id="The-01" >
+     <div  class="text-light py-md-3 col-md-8 " >
+         <br>
+        <p class="lead display-5   text-md-right py-md-10">
+                <strong> Front-End Developer and UX/UI </strong>designer, with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.
+        </p>
+             <hr class="col-md-7 bg-light py-sm-1 float-md-right">
+         <br>
+         <h1 class="display-5 text-md-right lead font-weight-bold mt-md-5 ">Web Developer - User Experience Designer - Graphic Artist</h1>
+     </div>
+
+
+        <div class="col-md-2 my-md-0  mt-md-5"  >
+                 <img src="1550855391-cc_dark.png" height="200" width="260" alt="worry"/>
+         </div>
+
+  </div>
+
+
+
+
+</div>
+
+<div class="container  bg-secondary py-md-5 border-dark border-1">
+
+
+
+
+             <h1 class="text-center text-light py-md-3  " id="The-02">PORTFOLIO</h1>
+
+             <hr class="col-md-5 bg-light py-sm-1 mt-md-5">
+
+</div>
+
+
+
+
+
+
+
+<div class="container  bg-secondary py-md-5">
+
+
+
+
+    <h1 class="text-center text-light py-md-3  " id="The-03">CONTACT</h1>
+
+    <hr class="col-md-5 bg-light py-sm-1 mt-md-5">
+
+
+
+
+
+</div>
+
+<div class="container  bg-secondary py-md-5 border-dark border-1">
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group bg-dark text-light my-md-3  ">
+
+                <input type="text" class="form-control  border-0 rounded-0 border-bottom-1 " placeholder="Username" aria-label="Username">
+            </div>
+            <div class="input-group bg-dark text-light my-md-3 ">
+
+                <input type="email" class="form-control  border-0 rounded-0 border-bottom-1 " placeholder="E-mail" aria-label="E-mail">
+            </div>
+            <div class="input-group bg-dark text-light my-md-3 ">
+
+                <input type="number" class="form-control  border-0 rounded-0 border-bottom-1 " placeholder="Phone Number" aria-label="Phone Number">
+            </div>
+
+            <div class="input-group bg-dark text-light my-md-3 ">
+
+                <textarea type="text" class="form-control md-5   border-0 rounded-0 border-bottom-1 " placeholder="Message" aria-label="Message"
+                       aria-describedby="button-addon2" rows="5" ></textarea>
+
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary btn-outline-light" type="submit" id="button-addon2">Send</button>
+            </div>
+
+        </div>
+
+
+        <div class="col-md-4">
+            <p class="lead">Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime.</p>
+            <br>
+            <span class="lead">I promise to reply A.S.A.P.</span>
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+<div class="container-fluid  bg-dark" >
+
+    <div class="row py-md-5">
+
+        <div class="col-md-5 text-center">
+            <span class="font-weight-bold display-5 text-light ">
+               ABOUT THIS PAGE
+            </span>
+            <br>
+            <br>
+            <span class="text-light display-5 col-md-3">
+                 Made with <i class="fa fa-coffee "></i> and <i class="fa fa-music"></i> by <a href="#" class="btn-outline-info text-decoration-none">Justin Sane.</a>
+            </span>
+
+
+        </div>
+        <div class="col-md-5 text-center">
+                         <span class="font-weight-bold display-5 text-light text-right">
+                             AROUND THE WEB
+                         </span>
+            <br>
+            <br>
+            <button class="btn btn-outline-light rounded-circle" type="button"><i class="fa fa-linkedin-square "></i></button>
+            <button class="btn btn-outline-light rounded-circle" type="button"><i class="fa fa-github "></i></button>
+            <button class="btn btn-outline-light rounded-circle" type="button"><i class="fa fa-twitter "></i></button>
+            <button class="btn btn-outline-light rounded-circle" type="button"><i class="fa fa-flickr "></i></button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container-fluid  py-md-5  text-center " style="background: rgba(113,25,144,0.92) ">
+
+    <span class="font-weight-bold text-light display-5">qlip © 2019. All Rights Reversed</span>
+
+</div>
+
+
+
+</body>
+</html>

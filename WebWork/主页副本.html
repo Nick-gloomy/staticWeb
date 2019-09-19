@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <script src="bootstrap.min.js"></script>
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="Tne_one.js"></script>
+    <link rel="stylesheet" href="bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<nav class="navbar navbar-light bg-dark navbar-fixed-top">
+    <div>
+
+        <h1 class="text-light"><i class="fa fa-superpowers fa-lg"></i>火影</h1>
+    </div>
+
+    <div>
+        <button class="btn btn-dark my-2 my-sm-0 text-secondary mx-2 text-light" type="button" data-toggle="modal"
+                data-target="#ModalLabel_1" style="background: rgba(152,0,10,0.85)">登录
+        </button>
+        <button class="btn   btn-secondary my-2 my-sm-2 text-light ml-2" type="button" data-toggle="modal"
+                data-target="#ModalLabel_2">注册
+        </button>
+    </div>
+</nav>
+
+<div class="modal fade " id="ModalLabel_1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel_1"
+     aria-hidden="true">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content bg-secondary text-light">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel_1">登录</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-group">
+                    <div class="row">
+                        <label class=" col-md-2 mx-md-1" for="name_1">姓名</label>
+                        <input type="text" id="name_1" class="col-md-5 rounded" required>
+                    </div>
+
+                    <div class="row">
+                        <label class=" col-md-2 mx-md-1" for="pasword_1">密码</label>
+                        <input type="password" id="pasword_1" class="col-md-5 rounded" required>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <input type="submit" class="btn btn-info" value="提交" id="To_1" data-dismiss="modal">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade " id="ModalLabel_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-secondary text-light">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">注册</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-group">
+                    <div class="row">
+                        <label class=" col-md-2 mx-md-1" for="name_2">姓名</label>
+                        <input type="text" id="name_2" class="col-md-5 rounded" required>
+                    </div>
+
+                    <div class="row">
+                        <label class=" col-md-2 mx-md-1" for="password_2">密码</label>
+                        <input type="password" id="password_2" class="col-md-5 rounded" required>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary " id="To_2" data-dismiss="modal">提交</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid bg-dark py-md-5">
+
+
+    <br>
+
+    <div id="carouselExampleIndicators" class="carousel slide my-md-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img_01/0.1.jpg" class="d-block w-100 rounded" alt="..." height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="img_01/0.2.jpg" class="d-block w-100 rounded" alt="..." height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="img_01/0.4.jpg" class="d-block w-100 rounded" alt="..." height="500">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+
+</div>
+
+<div id="zhuti" >
+    <div class="container-fluid bg-secondary" id="part_2">
+        <br>
+
+        <div class="jumbotron bg-secondary">
+            <h1 class="display-4">欢迎来到，火影!</h1>
+            <hr class="my-4">
+            <p class="lead">人正是因为度过了一段阴暗岁月，才会更渴求黎明的曙光——岸本齐史</p>
+            <a class="btn btn-dark  btn-lg text-secondary text-light" href="#part_2" role="button"
+               style="background: rgba(26,97,244,0.87)" id="btn-start" onclick="playAudio()">开始吧</a>
+        </div>
+        <audio loop id="Au">
+            <source src="music/いきものがかり - ブルーバード.mp3">
+            <source src="music/いきものがかり%20-%20ブルーバード.ogg">
+            <source src="music/いきものがかり%20-%20ブルーバード.wav">
+
+        </audio>
+    </div>
+
+
+    <div class="container-fluid bg-dark my-md-n5 py-md-2">
+
+
+        <div class="row py-md-5">
+            <div class="col-md-5 text-light">
+                <p class="lead">
+
+                    <strong class="display-4" style="color:rgba(26,97,244,0.87) ">十多年前</strong>一只恐怖的尾兽“九尾妖狐”袭击了木叶隐村，当时的第四代火影拼尽全力，以自己的生命为代价将“九尾妖狐”封印在了刚出生的鸣人身上。木叶村终于恢复了平静，但村民们却把鸣人当成怪物看待，所有人都疏远他。无可奈何，鸣人用各种恶作剧试图吸引大家的注意力。在伊鲁卡老师的关心下，鸣人始终保持着乐观的精神。为了让更多的人认可自己，他下定决心要成为火影！鸣人怀着过人的自信与勇气开始了训练，但一切要比他想象的要困难的多！
+                    鸣人从小十分孤独，木叶村村民把他当成九尾的化身，当他是怪物看待。一晃十多年过去了，
+                    鸣人考入了木叶村的忍者学校，结识了伙伴佐助和小樱。佐助是宇智波一族的末裔，当他还是小孩的时候他的哥哥——一个拥有强大实力的忍者将他们家族的人都杀死了，然后投靠了一直想将木叶村毁灭的大蛇丸，佐助从小就发誓要杀死哥哥，为家族报仇。鸣人他们在忍者学校得到了卡卡西老师的精心指点，在他的帮助下去迎接成长中的一次又一次挑战！
+                    不久之后，在卡卡西老师的带领下，鸣人与佐助、小樱一起踏上了修行之路。等待他们的将是无穷无尽的艰险挑战，而鸣人等人也在这生与死的较量中逐渐成长起来。</p>
+
+
+            </div>
+            <div class="col-md-6 pl-md-5">
+                <br>
+                <video  class="  rounded " width="800" height="440" id="video"  preload="auto" poster="img_01/poster.png">
+                    <source src="video/Bule.mp4" >
+                    <source src="video/Bule.webm" >
+                </video>
+                <div class="row align-items-md-center py-md-4" style="margin-left: 6px;">
+
+                    <button class="btn btn-secondary text-center text-light col-md-2  mx-md-4" id="on" onclick="on()">播放</button>
+                    <button class="btn btn-secondary text-center text-light col-md-2 mx-md-4" onclick="backTo(5)">快进</button>
+                    <button class="btn btn-secondary text-center text-light col-md-2 mx-md-4" onclick="backTo(-5)">倒退</button>
+                    <button class="btn btn-secondary text-center text-light col-md-2 mx-md-4" id="isMuted" onclick="isMuted()">静音</button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid bg-secondary py-md-2">
+
+        <div class="row align-items-md-center py-md-3" style="margin-left: 4px;">
+
+            <div class="col-md-3 text-center ">
+                <a class="btn btn-dark  text-light  py-md-3 px-md-5" href="人物介绍3.html"><i class="fa fa-user-circle "style="color:rgba(26,97,244,0.87) "></i>   人物简介</a>
+            </div><div class="col-md-3 text-center  py-md-3">
+            <a class="btn btn-dark  text-light  py-md-3 px-md-5" href="地区介绍2.html"><i class="fa fa-map "style="color:rgba(26,97,244,0.87) "></i>   地区介绍</a>
+        </div><div class="col-md-3 text-center">
+            <a class="btn btn-dark text-light  py-md-3 px-md-5" href="背后故事1.html"><i class="fa fa-pencil-square-o" style="color:rgba(26,97,244,0.87) " ></i>  背后故事</a>
+        </div> <div class="col-md-3 text-center">
+            <a class="btn btn-dark text-light  py-md-3 px-md-5" href="漫画涂鸦.html"><i class="fa fa-paint-brush" style="color:rgba(26,97,244,0.87) "></i>  漫画涂鸦</a>
+        </div>
+        </div>
+        <br>
+        <hr class="display-4 bg-light">
+        <br>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a class="btn btn-dark text-center text-light col-md-2 mx-md-5 py-md-4 px-md-3" href="论坛.html"><i class="fa fa-comments" style="color:rgba(26,97,244,0.87) "></i> 进入论坛</a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+    </div>
+
+</div>
+
+
+<div class="container-fluid bg-dark py-md-3 ">
+    <div class="blockquote text-center  text-light">
+        <p class="lead">陈钰林 丨 向蔚然 丨 李朗 丨 曾铭阳</p>
+        <footer class="blockquote-footer">16级计科2班</footer>
+    </div>
+</div>
+</body>
+</html>
